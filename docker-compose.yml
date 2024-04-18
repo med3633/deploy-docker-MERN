@@ -9,17 +9,21 @@ services:
     environment:
       MONGO_URI: mongodb://crud:crud@db:27017
     volumes:
-      - web-root:/app/build
       - "./server/:/app"  
       - "/app/node_modules"
+    networks:
+      - crud_network
+
   web:
     image: mohamedamineblibech/frontend_crud
     container_name: web
     volumes:
+      - web-root:/app/build
       - "./client/:/app"  
       - "/app/node_modules"
     networks:
       - crud_network
+      
   db: 
     image: mongo
     restart: always
