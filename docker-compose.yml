@@ -5,11 +5,11 @@ services:
     container_name: api
     ports:
       - "3700:3700"
-    command: npm start  
+    command: npm run start:dev  
     environment:
       MONGO_URI: mongodb://crud:crud@db:27017
     volumes:
-      - "./server/:/app"  
+      # - "./server/:/app"  
       - "/app/node_modules"
     networks:
       - crud_network
