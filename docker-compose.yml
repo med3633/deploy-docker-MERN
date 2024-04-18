@@ -15,8 +15,6 @@ services:
   web:
     image: mohamedamineblibech/frontend_crud
     container_name: web
-    ports:
-      - "3000:3000"
     command: npm run start  
     volumes:
       - "./client/:/app"  
