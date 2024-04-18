@@ -8,7 +8,7 @@ COPY . ./
 RUN npm run build
 ENV PORT 3000
 EXPOSE ${PORT}
-
+CMD ["npm", "run", "start"]
 # FROM node:15-alpine
 # WORKDIR /app
 # COPY package.json package-lock.json ./
@@ -18,5 +18,5 @@ EXPOSE ${PORT}
 # # Expose port
 # EXPOSE 3000
 # # Run app
-# CMD ["npm", "run", "start"]
+# 
 # ###

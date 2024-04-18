@@ -15,7 +15,6 @@ services:
   web:
     image: mohamedamineblibech/frontend_crud
     container_name: web
-    command: npm run start  
     volumes:
       - "./client/:/app"  
       - "/app/node_modules"
