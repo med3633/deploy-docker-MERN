@@ -1,7 +1,7 @@
 version: '3.0'
 services:
   api:
-    build: ./server/
+    image: mohamedamineblibech/backend_crud
     container_name: api
     ports:
       - "3700:3700"
@@ -9,14 +9,12 @@ services:
     environment:
       MONGO_URI: mongodb://crud:crud@db:27017
     volumes:
+      - web-root:/app/build
       - "./server/:/app"  
       - "/app/node_modules"
   web:
-    build: ./client/
+    image: mohamedamineblibech/frontend_crud
     container_name: web
-    ports:
-      - "3000:3000"
-    command: npm run build  
     volumes:
       - "./client/:/app"  
       - "/app/node_modules"
