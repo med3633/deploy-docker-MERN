@@ -63,7 +63,7 @@ services:
       - crud_network
 
 volumes:
-  db-data: {}        
+  db-data:       
   certbot-etc:
   certbot-var:
   web-root:
