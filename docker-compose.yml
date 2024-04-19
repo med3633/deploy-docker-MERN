@@ -16,7 +16,6 @@ services:
   web:
     build: ./client/
     container_name: web
-    command: npm start  
     volumes:
       # - web-root:/app/build
       - "./client/:/app"  

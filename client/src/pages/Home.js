@@ -103,7 +103,7 @@ function Home() {
             <tr>
               <th scope="col">Email</th>
               <th scope="col">Lastname</th>
-              <th scope="col">Firstname</th>
+              <th scope="col">Firstname11</th>
               <th scope="col">Age</th>
               <th scope="col">Actions</th>
             </tr>
