@@ -17,7 +17,7 @@ COPY . .
 # Create the ESLint cache directory and adjust permissions
 RUN mkdir -p /app/node_modules/.cache/ && chmod -R 777 /app/node_modules/.cache/
 # Build React app into /app/build directory
-RUN npm run build
+#RUN npm run build
 # Expose port
 EXPOSE 3000
 #########
