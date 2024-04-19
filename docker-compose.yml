@@ -64,12 +64,22 @@ services:
       - test_network   
 
 volumes:
-  db-data: {} 
+  db-data: 
   certbot-etc:
   certbot-var:
   web-root:
     driver: local
+  dhparam:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/ubuntu/deploy-docker-MERN/dhparam/
+      o: bind
+
 
 networks:
   test_network:
     driver: bridge
+
+      
+    
