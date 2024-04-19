@@ -60,7 +60,6 @@ services:
   #   depends_on:
   #     - nginx
     command: certonly --webroot --webroot-path=/var/www/html --email blibechmedamine@gmail.com --agree-tos --no-eff-email  --force-renewal -d testtt4.ddns.net
-
     networks:
       - test_network   
 ##
