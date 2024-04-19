@@ -59,7 +59,7 @@ services:
   #     - web-root:/var/www/html
   #   depends_on:
   #     - nginx
-    command: certonly --webroot --webroot-path=/var/www/html --email blibechmedamine@gmail.com --agree-tos --no-eff-email  --force-renewal -d 51.255.49.204
+    command: certonly --webroot --webroot-path=/var/www/html --email blibechmedamine@gmail.com --agree-tos --no-eff-email  --force-renewal -d med369874.ddns.net
     networks:
       - test_network   
 ##
