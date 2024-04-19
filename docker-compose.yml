@@ -14,7 +14,7 @@ services:
     networks:
       - test_network
   web:
-    image: ./client/
+    build: ./client/
     container_name: web
     command: npm start  
     volumes:
