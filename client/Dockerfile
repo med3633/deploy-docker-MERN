@@ -10,7 +10,7 @@ RUN npm install --legacy-peer-deps
 
 # Copy the rest of the application code
 COPY . .
-
+RUN npm run build
 # Create the ESLint cache directory and adjust permissions
 RUN mkdir -p /app/node_modules/.cache/ && chmod -R 777 /app/node_modules/.cache/
 # Expose port
